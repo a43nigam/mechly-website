@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#0A0A0A"/>
+  <text x="100" y="280" fill="#E8E8E8" font-family="monospace" font-weight="600" font-size="72">MECHLY</text>
+  <text x="100" y="380" fill="#888888" font-family="monospace" font-weight="400" font-size="36">DFM feedback while you design.</text>
+  <rect x="100" y="420" width="80" height="4" fill="#C4A052"/>
+</svg>
