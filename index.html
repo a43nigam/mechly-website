@@ -59,7 +59,7 @@
   <header class="header">
     <div class="container header__inner">
       <a href="/" class="logo">MECHLY</a>
-      <a href="#signup" class="btn btn--primary">Get Early Access</a>
+      <div class="header__clock" id="clock"></div>
     </div>
   </header>
 
@@ -69,116 +69,34 @@
       <div class="container">
         <div class="hero__content">
           <h1 class="hero__title">DFM feedback while you design.</h1>
-          <p class="hero__description">
-            Mechly catches CNC machining issues in Fusion 360 before you send your part to the shop. Stop waiting for feedback from your machinist.
-          </p>
-          <form class="form" name="waitlist-hero" method="POST" data-netlify="true" netlify-honeypot="bot-field">
-            <input type="hidden" name="form-name" value="waitlist-hero">
-            <p class="visually-hidden">
-              <label>Don't fill this out: <input name="bot-field"></label>
-            </p>
-            <div class="form__fields">
-              <input
-                type="email"
-                name="email"
-                class="form__input"
-                placeholder="you@company.com"
-                required
-                autocomplete="email"
-              >
-              <button type="submit" class="btn btn--primary form__submit">Join Waitlist</button>
-            </div>
-            <div class="form__success">
-              You're on the list. We'll be in touch.
-            </div>
-          </form>
+          <div class="hero__actions">
+            <a href="#" class="btn btn--primary">Download for Fusion 360</a>
+            <form class="form" name="updates" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+              <input type="hidden" name="form-name" value="updates">
+              <p class="visually-hidden">
+                <label>Don't fill this out: <input name="bot-field"></label>
+              </p>
+              <div class="form__fields">
+                <input
+                  type="email"
+                  name="email"
+                  class="form__input"
+                  placeholder="Email for updates"
+                  required
+                  autocomplete="email"
+                >
+                <button type="submit" class="btn btn--secondary form__submit">Subscribe</button>
+              </div>
+              <div class="form__success">
+                You're subscribed.
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Problem Section -->
-    <section class="problem section">
-      <div class="container">
-        <div class="problem__content">
-          <h2 class="problem__title">Designers find manufacturability issues too late.</h2>
-          <p class="problem__text">
-            The traditional DFM review happens after design freeze. Engineers email STEPs to machinists, wait for feedback, then redesign. Each cycle costs thousands and weeks of delay. By the time you learn a feature can't be machined, you've already committed to the design.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- How It Works Section -->
-    <section class="how-it-works section">
-      <div class="container">
-        <h2 class="how-it-works__title">How it works</h2>
-        <div class="features">
-          <article class="feature">
-            <h3 class="feature__title">Real-time analysis</h3>
-            <p class="feature__description">
-              Mechly runs inside Fusion 360, analyzing your part as you model. No file exports. No waiting.
-            </p>
-          </article>
-          <article class="feature">
-            <h3 class="feature__title">Actionable feedback</h3>
-            <p class="feature__description">
-              Get specific callouts: wall too thin, undercut inaccessible, tolerance too tight for this feature size.
-            </p>
-          </article>
-          <article class="feature">
-            <h3 class="feature__title">Your shop, your rules</h3>
-            <p class="feature__description">
-              Configure constraints based on your machine capabilities and preferred vendors. DFM that matches reality.
-            </p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section id="signup" class="cta section">
-      <div class="container">
-        <div class="cta__content">
-          <h2 class="cta__title">Ship better parts, faster.</h2>
-          <p class="cta__text">
-            Join the waitlist to get early access when we launch.
-          </p>
-          <form class="form" name="waitlist-cta" method="POST" data-netlify="true" netlify-honeypot="bot-field">
-            <input type="hidden" name="form-name" value="waitlist-cta">
-            <p class="visually-hidden">
-              <label>Don't fill this out: <input name="bot-field"></label>
-            </p>
-            <div class="form__fields">
-              <input
-                type="email"
-                name="email"
-                class="form__input"
-                placeholder="you@company.com"
-                required
-                autocomplete="email"
-              >
-              <button type="submit" class="btn btn--primary form__submit">Join Waitlist</button>
-            </div>
-            <div class="form__success">
-              You're on the list. We'll be in touch.
-            </div>
-          </form>
-        </div>
-      </div>
-    </section>
   </main>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container footer__inner">
-      <span class="footer__logo">MECHLY</span>
-      <span class="footer__copyright">&copy; 2025 Mechly</span>
-      <nav class="footer__links">
-        <a href="https://twitter.com/mechlyio" class="footer__link" target="_blank" rel="noopener">Twitter</a>
-        <a href="https://linkedin.com/company/mechly" class="footer__link" target="_blank" rel="noopener">LinkedIn</a>
-      </nav>
-    </div>
-  </footer>
 
   <script src="/js/main.js"></script>
 </body>

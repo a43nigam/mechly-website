@@ -1,7 +1,22 @@
-// Mechly - Form handling for Netlify Forms
+// Mechly
 (function() {
   'use strict';
 
+  // Clock
+  var clock = document.getElementById('clock');
+
+  function updateClock() {
+    var now = new Date();
+    var hours = now.getHours().toString().padStart(2, '0');
+    var mins = now.getMinutes().toString().padStart(2, '0');
+    var secs = now.getSeconds().toString().padStart(2, '0');
+    clock.textContent = hours + ':' + mins + ':' + secs;
+  }
+
+  updateClock();
+  setInterval(updateClock, 1000);
+
+  // Form handling for Netlify Forms
   document.querySelectorAll('form[data-netlify="true"]').forEach(function(form) {
     form.addEventListener('submit', function(e) {
       e.preventDefault();
